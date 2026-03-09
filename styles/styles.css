@@ -1,3 +1,25 @@
+:root {
+  --font-primary: 'Inter', sans-serif;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: 1rem;
+}
+
+.hero {
+min-height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+padding-top: 3rem;
+position: relative;
+}
+
+.hero_content {
+  text-align: center;
+}
+
 .inter-font {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
