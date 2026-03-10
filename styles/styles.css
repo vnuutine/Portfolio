@@ -1,10 +1,48 @@
 :root {
   --font-primary: 'Inter', sans-serif;
+
+  /* Color variables */
+  --color-bg-primary: #0a0a0a;
+  --color-text-primary: #f4f4f5;
+  --color-text-secondary: #a1a1aa;
+  --color-accent: #f25a08;
 }
 
 body {
   font-family: var(--font-primary);
   font-size: 1rem;
+  background-color: var(--color-bg-primary);
+}
+
+header {
+  color: var(--color-accent);
+  display: flex;
+  justify-content: space-around;
+  font-weight: 800;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+a {
+  color: var(--color-text-primary);
+  padding: 0 0.2rem 0 0.2rem;
+}
+
+a:link {
+    color: var(--color-text-secondary);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-accent);
+    text-decoration: wavy;
+}
+
+a:active {
+  color: var(--color-accent);
 }
 
 .hero {
@@ -12,12 +50,39 @@ min-height: 100vh;
 display: flex;
 align-items: center;
 justify-content: center;
-padding-top: 3rem;
+padding-top: 1rem;
 position: relative;
 }
 
 .hero_content {
   text-align: center;
+}
+
+.hero_name {
+  font-size: 4.5rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  color: var(--color-text-primary);
+}
+
+.hero_name .accent {
+  color: var(--color-accent);
+}
+
+.hero_tagline {
+  font-size: 1.25;
+  margin-bottom: 1.5rem; 
+  color: var(--color-text-secondary);
+}
+
+.hero_bio {
+  font-size: 1.125rem;
+  max-width: 36rem;
+  margin: 0 auto 2rem;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
 }
 
 .inter-font {
