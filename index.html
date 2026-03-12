@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ville Nuutinen | Portfolio</title>
 
     <!-- Google fonts -->
@@ -17,10 +17,11 @@
 <body>
     <header> 
         <h1>Ville Nuutinen</h1>
-        <nav class="nav_container">
+        <nav>
             <ul>
+                <li><a href="#hero">Home</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="experience">Experience</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -31,10 +32,10 @@
         <!-- Hero section -->
         <section id="hero" class="hero">
             <div class="hero_content">
-                <h1 class="hero_name">Hello, I'm <span class="accent">Ville Nuutinen</span></h1>
+                <h2 class="hero_name">Hello, I'm <span class="name_accent">Ville Nuutinen</span></h2>
                 <p class="hero_tagline">ICT Engineering Student & Aspiring Cybersecurity Engineer</p>
                 <p class="hero_bio">
-                    Career changer with a decade of experience in forestry. Currently 
+                    Career changer with more than a decade of experience in forestry. Currently 
                     pursuing a Bachelor's Degree in Information and Communications 
                     Technology at JAMK University of Applied Sciences, building a 
                     new career in cybersecurity.
@@ -63,7 +64,7 @@
 
                     <article class="project-card">
                         <div class="project-image">
-                            <img src="images/pswdchecker.png" rel="passwordchecker">
+                            <img src="images/pswdchecker.png" alt="passwordchecker">
                         </div>
                         <div class="project-body">
                             <h3 class="project-title">Password Checker</h3>
@@ -74,7 +75,7 @@
                                 <span class="tag">Security</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://github.com/vnuutine/password_checker" class="project-link"><i data-feather="github"></i></a>
+                                <a href="https://github.com/vnuutine/password_checker" class="project-link"><i data-feather="github"></i> Source</a>
                             </div>
                         </div>
                     </article>
@@ -83,7 +84,7 @@
 
                     <article class="project-card">
                         <div class="project-image">
-                            <img src="images/todolist.png" rel="todolist">
+                            <img src="images/todolist.png" alt="todolist">
                         </div>
                         <div class="project-body">
                             <h3 class="project-title">Todo List CLI</h3>
@@ -94,13 +95,38 @@
                                 <span class="tag">Productivity</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://github.com/vnuutine/todo_list" class="project-link"><i data-feather="github"></i></a>
+                                <a href="https://github.com/vnuutine/todo_list" class="project-link"><i data-feather="github"></i> Source</a>
                             </div>
                         </div>
                     </article>
                 </div>
             </div>
         </section>
+
+        <!-- Experience section -->
+        <section id="experience" class="section">
+            <div class="container">
+                <h2 class="section-title">Experience</h2>
+                <p class="section-info">My work experience</p>
+            </div>
+        </section>
+
+        <!-- Skills section -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title">Skills</h2>
+                <p class="section-info">My skills</p>
+            </div>
+        </section>
+
+        <!-- Contact section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Contact</h2>
+                <p class="section-info">Feel free to contact me!</p>
+            </div>
+        </section>
+
     </main>
 
     <footer>
