@@ -119,6 +119,11 @@ nav ul a:hover::after {
   padding: 0 4rem;
 }
 
+.section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 .section-title {
   font-size: 2rem;
   font-weight: 700;
@@ -134,11 +139,6 @@ nav ul a:hover::after {
   margin-bottom: 3rem;
 }
 
-.section {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
 /* ------------ */
 /* HERO SECTION */
 /* ------------ */
@@ -150,13 +150,13 @@ nav ul a:hover::after {
   justify-content: center;
   padding-top: 1rem;
   position: relative;
-  }
+}
 
-.hero_content {
+.hero-content {
   text-align: center;
 }
 
-.hero_name {
+.hero-name {
   font-size: 4.5rem;
   font-weight: 800;
   letter-spacing: -0.03em;
@@ -165,17 +165,17 @@ nav ul a:hover::after {
   color: var(--color-text-primary);
 }
 
-.hero_name .name_accent {
+.hero-name .name-accent {
   color: var(--color-accent);
 }
 
-.hero_tagline {
+.hero-tagline {
   font-size: 1.25rem;
   margin-bottom: 1.5rem; 
   color: var(--color-text-secondary);
 }
 
-.hero_bio {
+.hero-bio {
   font-size: 1.125rem;
   max-width: 36rem;
   margin: 0 auto 2rem;
@@ -183,7 +183,7 @@ nav ul a:hover::after {
   color: var(--color-text-secondary);
 }
 
-.hero_links {
+.hero-links {
   display: flex;
   justify-content: center;
   gap: 1rem;
@@ -312,13 +312,63 @@ nav ul a:hover::after {
   color: var(--color-text-secondary);
   list-style-type: circle;
   padding: 0 0 1rem 2.5rem;
-  gap: 0.5rem;
 }
 
 .skills-list li::marker {
   color: var(--color-accent);
 }
+
+/* --------------- */
 /* CONTACT SECTION */
+/* --------------- */
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--color-accent);
+  border-radius: 1.5rem;
+  padding: 1rem;
+}
+
+.contact-title {
+  text-align: center;
+  color: var(--color-text-primary);
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+.contact-text {
+  text-align: center;
+  color: var(--color-text-primary);
+  padding-bottom: 2rem;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.contact-link,
+.contact-link:link,
+.contact-link:visited {
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-card);
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.7rem;
+  border: 1px solid black;
+  border-radius: 9999px;
+  transition: all 300ms;
+}
+
+.contact-link:hover {
+  color: var(--color-accent);
+}
 
 /* ------ */
 /* FOOTER */
@@ -327,5 +377,6 @@ nav ul a:hover::after {
 footer {
   color: var(--color-text-secondary);
   text-align: center;
-  padding-bottom: 0.5rem;
+  padding-top: 5rem;
+  padding-bottom: 1rem;
 }
