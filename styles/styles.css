@@ -236,6 +236,7 @@ nav ul a:hover::after {
 
 .project-image {
   height: 12rem;
+  width: 100%;
   overflow: hidden;
 }
 
