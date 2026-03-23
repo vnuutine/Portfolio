@@ -82,12 +82,12 @@ a {
 }
 
 a:link {
-    color: var(--color-text-secondary);
-    text-decoration: none;
+  color: var(--color-text-secondary);
+  text-decoration: none;
 }
 
 a:hover {
-    color: var(--color-accent);
+  color: var(--color-accent);
 }
 
 a:active {
@@ -96,7 +96,7 @@ a:active {
 
 /* Appearing underline for links on hover */
 nav ul a::after {
-  content: ''; /* If removed, the whole pseudo-element dissappears */
+  content: ''; /* If removed, the whole pseudo-element disappears */
   position: absolute;
   bottom: -4px;
   left: 0;
@@ -294,7 +294,7 @@ nav ul a:hover::after {
 
 /* Pseudo-elements 'before' allows adding visual elements without adding anything to html file */
 .timeline::before {
-  content: ""; /* If removed, the whole pseudo-element dissappears */
+  content: ""; /* If removed, the whole pseudo-element disappears */
   position: absolute;
   left: 50%; 
   transform: translateX(-50%); /* Apply perfect centering, offsetting by 1/2 width of the element */
@@ -325,7 +325,7 @@ nav ul a:hover::after {
 
 /* Right side ball */
 .timeline-entry:nth-child(odd)::before {
-  content: ""; /* If removed, the whole pseudo-element dissappears */
+  content: ""; /* If removed, the whole pseudo-element disappears */
   position: absolute;
   left: -5px;
   top: 1.7rem;
@@ -337,7 +337,7 @@ nav ul a:hover::after {
 
 /* Left side ball */
 .timeline-entry:nth-child(even)::before {
-  content: ""; /* If removed, the whole pseudo-element dissappears */
+  content: ""; /* If removed, the whole pseudo-element disappears */
   position: absolute;
   right: -5px;
   top: 1.7rem;
