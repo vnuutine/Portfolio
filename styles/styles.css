@@ -234,6 +234,10 @@ nav ul a:hover::after {
   overflow: hidden; /* Doesnt allow the image to overflow past the set border radius */
 }
 
+.project-card:hover {
+  box-shadow: 2px 2px 20px 1px var(--color-accent);
+}
+
 .project-image {
   height: 12rem;
   width: 100%;
