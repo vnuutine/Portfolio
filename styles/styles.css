@@ -501,6 +501,19 @@ footer {
     padding-bottom: 0.75rem;
   }
 
+  /* Disable the h1 background fill animation */
+  header h1 a,
+  header h1 a:link,
+  header h1 a:visited {
+    background: none;
+    transition: none;
+  }
+
+  /* Disable the nav underline animation */
+  nav ul a::after {
+    display: none;
+  }
+
   /* HERO SECTION */
 
   .hero-name {
