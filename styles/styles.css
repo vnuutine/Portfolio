@@ -471,6 +471,7 @@ footer {
 
 @media (max-width: 480px) {
   
+  /* CONTAINER */
   .container {
     padding: 0 1rem;
   }
@@ -480,6 +481,8 @@ footer {
     padding-bottom: 3rem;
   }
 
+  /* HEADER SECTION */
+
   header {
     flex-direction: column;
     height: auto;
@@ -487,8 +490,10 @@ footer {
     padding-bottom: 0.75rem;
   }
 
+  /* HERO SECTION */
+
   .hero-name {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 
   .hero-tagline {
@@ -498,6 +503,7 @@ footer {
   .hero-bio {
     font-size: 0.9rem;
   }
+
   .social-btn {
     width: 2.5rem;
     height: 2.5rem;
@@ -508,11 +514,14 @@ footer {
     height: 1.5rem;
   }
 
+  /* PROJECTS SECTION */
   .projects-grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 1.5rem;
   }
+
+  /* EXPERIENCE SECTION */
 
   #experience {
     font-size: 0.9rem;
@@ -539,13 +548,18 @@ footer {
     left: -5px;
   }
 
+    /* SKILLS SECTION */
+
   .skills-grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 1.5rem;
   }
 
+  /* CONTACT SECTION */
+
   .contact-links {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
   }
 }
