@@ -58,12 +58,19 @@ header h1 {
   font-weight: 700;
 }
 
+/* Make the header h1 link change color with bg animation on hover */
 header h1 a,
 header h1 a:link,
-header h1 a:visited,
-header h1 a:hover {
+header h1 a:visited {
   color: var(--color-accent);
-  text-decoration: none;
+  background: linear-gradient(var(--color-accent), var(--color-accent)) no-repeat left;
+  background-size: 0% 100%;
+  transition: background-size 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+header h1 a:hover {
+  background-size: 100% 100%;
+  color: var(--color-text-primary);
 }
 
 nav ul {
@@ -84,6 +91,10 @@ a {
 a:link {
   color: var(--color-text-secondary);
   text-decoration: none;
+}
+
+a:visited {
+  color: var(--color-text-secondary);
 }
 
 a:hover {
