@@ -522,6 +522,23 @@ footer {
     font-size: 1.3rem;
   }
 
+  .timeline::before {
+    left: 0;
+  }
+
+  .timeline-entry:nth-child(odd),
+  .timeline-entry:nth-child(even) {
+    width: 100%;
+    text-align: left;
+    margin: 1.3rem 0 0 0;
+    padding-left: 1.3rem;
+  }
+
+  .timeline-entry:nth-child(odd)::before,
+  .timeline-entry:nth-child(even)::before {
+    left: -5px;
+  }
+
   .skills-grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
