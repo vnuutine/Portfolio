@@ -483,6 +483,7 @@ footer {
 @media (max-width: 480px) {
   
   /* CONTAINER */
+
   .container {
     padding: 0 1rem;
   }
@@ -499,6 +500,20 @@ footer {
     height: auto;
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
+  }
+
+  header h1 a:hover {
+    background-size: 0% 100%;
+    color: var(--color-accent);
+  }
+
+  nav ul a:hover::after {
+    width: 0;
+  }
+
+  nav ul a:visited,
+  nav ul a:active {
+    color: var(--color-text-secondary);
   }
 
   /* HERO SECTION */
@@ -520,6 +535,11 @@ footer {
     height: 2.5rem;
   }
 
+  .social-btn:hover { 
+    border-color: var(--color-accent);
+    color: var(--color-text-secondary);
+  }
+
   .social-btn svg {
     width: 1.5rem;
     height: 1.5rem;
@@ -532,6 +552,14 @@ footer {
     gap: 1.5rem;
   }
 
+  .project-card:hover {
+    box-shadow: none;
+  }
+
+  .project-link:hover {
+    color: var(--color-text-secondary);
+  }
+
   /* EXPERIENCE SECTION */
 
   #experience {
@@ -542,10 +570,12 @@ footer {
     font-size: 1.3rem;
   }
 
+  /* Move the timeline to the left */ 
   .timeline::before {
     left: 0;
   }
 
+  /* Move timeline entries to the left */
   .timeline-entry:nth-child(odd),
   .timeline-entry:nth-child(even) {
     width: 100%;
@@ -553,7 +583,8 @@ footer {
     margin: 1.3rem 0 0 0;
     padding-left: 1.3rem;
   }
-
+  
+  /* Align the timeline circles to the line on the left */
   .timeline-entry:nth-child(odd)::before,
   .timeline-entry:nth-child(even)::before {
     left: -5px;
@@ -573,34 +604,10 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
   }
-}
 
-/* ------------- */
-/* TOUCH DEVICES */
-/* ------------- */
-
-@media (hover: none) {
-/* Disable all the hover animations on links and buttons */
-
-  header h1 a,
-  header h1 a:link,
-  header h1 a:visited {
-    background: none;
-    transition: none;
-  }
-
-  nav ul a::after {
-    display: none;
-  }
-
-    a:hover {
-    color: inherit;
-  }
-
-  .social-btn:hover,
-  .project-card:hover,
-  .project-link:hover,
-  .contact-link:hover {
-    all: unset;
+  .contact-link:hover,
+  .contact-link:visited, 
+  .contact-link:active {
+    color: var(--color-text-primary);
   }
 }
