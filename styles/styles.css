@@ -501,19 +501,6 @@ footer {
     padding-bottom: 0.75rem;
   }
 
-  /* Disable the h1 background fill animation */
-  header h1 a,
-  header h1 a:link,
-  header h1 a:visited {
-    background: none;
-    transition: none;
-  }
-
-  /* Disable the nav underline animation */
-  nav ul a::after {
-    display: none;
-  }
-
   /* HERO SECTION */
 
   .hero-name {
@@ -585,5 +572,35 @@ footer {
   .contact-links {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
+  }
+}
+
+/* ------------- */
+/* TOUCH DEVICES */
+/* ------------- */
+
+@media (hover: none) {
+/* Disable all the hover animations on links and buttons */
+
+  header h1 a,
+  header h1 a:link,
+  header h1 a:visited {
+    background: none;
+    transition: none;
+  }
+
+  nav ul a::after {
+    display: none;
+  }
+
+    a:hover {
+    color: inherit;
+  }
+
+  .social-btn:hover,
+  .project-card:hover,
+  .project-link:hover,
+  .contact-link:hover {
+    all: unset;
   }
 }
