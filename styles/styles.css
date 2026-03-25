@@ -68,9 +68,12 @@ header h1 a:visited {
   transition: background-size 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-header h1 a:hover {
-  background-size: 100% 100%;
-  color: var(--color-text-primary);
+/* Apply the animation only on hover (mouse) */
+@media (hover: hover) {
+  header h1 a:hover {
+    background-size: 100% 100%;
+    color: var(--color-text-primary);
+  }
 }
 
 nav ul {
@@ -97,8 +100,11 @@ a:visited {
   color: var(--color-text-secondary);
 }
 
-a:hover {
-  color: var(--color-accent);
+/* Apply the color change only on hover (mouse) */
+@media (hover: hover) {
+  a:hover {
+    color: var(--color-accent);
+  }
 }
 
 a:active {
@@ -117,8 +123,11 @@ nav ul a::after {
   transition: width 300ms;
 }
 
-nav ul a:hover::after {
-  width: 100%; 
+/* Apply the animation only on hover (mouse) */
+@media (hover: hover) {
+  nav ul a:hover::after {
+    width: 100%;
+  }
 }
 
 /* ----------------------- */
@@ -245,8 +254,11 @@ nav ul a:hover::after {
   overflow: hidden; /* Doesnt allow the image to overflow past the set border radius */
 }
 
-.project-card:hover {
-  box-shadow: 2px 2px 20px 1px var(--color-accent);
+/* Apply the animation only on hover (mouse) */
+@media (hover: hover) {
+  .project-card:hover {
+    box-shadow: 2px 2px 20px 1px var(--color-accent);
+  }
 }
 
 .project-image {
@@ -461,8 +473,11 @@ nav ul a:hover::after {
   transition: all 300ms;
 }
 
-.contact-link:hover {
-  color: var(--color-accent);
+/* Apply the color change only on hover (mouse) */
+@media (hover: hover) {
+  .contact-link:hover {
+    color: var(--color-accent);
+  }
 }
 
 /* ------ */
@@ -477,10 +492,10 @@ footer {
 }
 
 /* ---------------- */
-/* RESPONSIVE / 480 */
+/* RESPONSIVE / 654 */
 /* ---------------- */
 
-@media (max-width: 480px) {
+@media (max-width: 654px) {
   
   /* CONTAINER */
 
@@ -495,79 +510,23 @@ footer {
 
   /* HEADER SECTION */
 
-  header {
-    flex-direction: column;
-    height: auto;
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-  }
-
-  header h1 a:hover {
-    background-size: 0% 100%;
-    color: var(--color-accent);
-  }
-
-  nav ul a:hover::after {
-    width: 0;
-  }
-
   nav ul a:visited,
   nav ul a:active {
     color: var(--color-text-secondary);
   }
 
-  /* HERO SECTION */
-
-  .hero-name {
-    font-size: 4rem;
-  }
-
-  .hero-tagline {
-    font-size: 0.95rem;
-  }
-  
-  .hero-bio {
-    font-size: 0.9rem;
-  }
-
-  .social-btn {
-    width: 2.5rem;
-    height: 2.5rem;
-  }
-
-  .social-btn:hover { 
-    border-color: var(--color-accent);
-    color: var(--color-text-secondary);
-  }
-
-  .social-btn svg {
-    width: 1.5rem;
-    height: 1.5rem;
-  }
-
   /* PROJECTS SECTION */
+
   .projects-grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 1.5rem;
   }
 
-  .project-card:hover {
-    box-shadow: none;
-  }
-
-  .project-link:hover {
-    color: var(--color-text-secondary);
-  }
-
   /* EXPERIENCE SECTION */
 
   #experience {
-    font-size: 0.9rem;
-  }
-
-  .timeline-title {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 
   /* Move the timeline to the left */ 
@@ -590,7 +549,7 @@ footer {
     left: -5px;
   }
 
-    /* SKILLS SECTION */
+  /* SKILLS SECTION */
 
   .skills-grid {
     display: grid;
@@ -609,9 +568,62 @@ footer {
     justify-content: center;
   }
 
-  .contact-link:hover,
-  .contact-link:visited, 
+  .contact-link:visited,
   .contact-link:active {
     color: var(--color-text-primary);
   }
+}
+
+/* ---------------- */
+/* RESPONSIVE / 482 */
+/* ---------------- */
+
+@media (max-width: 482px) {
+  
+  /* HEADER SECTION */
+
+  header {
+    flex-direction: column;
+    height: auto;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  
+  /* HERO SECTION */
+
+  .hero-name {
+    font-size: 4rem;
+  }
+
+  .hero-tagline {
+    font-size: 0.95rem;
+  }
+  
+  .hero-bio {
+    font-size: 0.9rem;
+  }
+
+  .social-btn {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+
+  .social-btn svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  /* EXPERIENCE SECTION */
+
+  #experience {
+    font-size: 0.9rem;
+  }
+
+  .timeline-title {
+    font-size: 1.3rem;
+  }
+
+
 }
