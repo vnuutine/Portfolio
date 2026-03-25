@@ -254,6 +254,13 @@ nav ul a::after {
   overflow: hidden; /* Doesnt allow the image to overflow past the set border radius */
 }
 
+/* Align the third project card to the middle of the top ones */
+.project-card:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+  max-width: 50%;
+  margin: 0 auto;
+}
+
 /* Apply the animation only on hover (mouse) */
 @media (hover: hover) {
   .project-card:hover {
@@ -624,6 +631,4 @@ footer {
   .timeline-title {
     font-size: 1.3rem;
   }
-
-
 }
