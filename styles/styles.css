@@ -527,9 +527,15 @@ footer {
   /* PROJECTS SECTION */
 
   .projects-grid {
-    display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 1.5rem;
+  }
+  
+  /* Undo the project card centering on second row */
+  .project-card:last-child:nth-child(odd) {
+    grid-column: auto;
+    max-width: 100%;
+    margin: 0;
   }
 
   /* EXPERIENCE SECTION */
@@ -561,7 +567,6 @@ footer {
   /* SKILLS SECTION */
 
   .skills-grid {
-    display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 1.5rem;
   }
