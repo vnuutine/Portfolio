@@ -602,7 +602,11 @@ footer {
 
   .contact-links {
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contact-link {
+    justify-content: center;
   }
 
   .contact-link:hover,
